@@ -54,7 +54,7 @@ export class GameObject {
 		this.name = config.name || 'DefaultGameObjectName';
 		this.loader = config.loader;
 		this.resource = config.resource;
-		this.portrait = config.portrait || 'entities/portrait-default.png';
+		this.portrait = config.portrait || '/entities/portrait-default.png';
 		// Pathing
 		this.pathName = config.pathName;
 		this.path = presetPaths[this.pathName || 'idle'];

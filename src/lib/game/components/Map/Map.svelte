@@ -73,7 +73,7 @@
 
 		// Map Image
 		const image = new Image(elemCanvas.width, elemCanvas.height);
-		image.src = 'overworld.png';
+		image.src = '/overworld.png';
 		image.onload = () => {
 			if (ctx === null) return;
 			ctx.save();

@@ -22,8 +22,8 @@ export const npcsList: any = (config: any) => {
 		new GameObject({
 			name: 'Wissem',
 			loader: config.loader,
-			resource: 'entities/npcs/npc-chris.json',
-			portrait: 'entities/npcs/npc-chris-portrait.png',
+			resource: '/entities/npcs/npc-chris.json',
+			portrait: '/entities/npcs/npc-chris-portrait.png',
 			pathName: 'npc-left-right',
 			animatedSpriteSettings: { width: 2, height: 3 },
 			containerSettings: { x: 51, y: 69, width: 2, height: 3 },
@@ -35,8 +35,8 @@ export const npcsList: any = (config: any) => {
 		new GameObject({
 			name: 'Melissa',
 			loader: config.loader,
-			resource: 'entities/npcs/npc-melissa.json',
-			portrait: 'entities/npcs/npc-melissa-portrait.png',
+			resource: '/entities/npcs/npc-melissa.json',
+			portrait: '/entities/npcs/npc-melissa-portrait.png',
 			pathName: 'npc-circle',
 			animatedSpriteSettings: { width: 2, height: 3 },
 			containerSettings: { x: 40, y: 60, width: 2, height: 3 },
@@ -60,7 +60,7 @@ export const crabsList: any = (config: any) => {
 			new GameObject({
 				name: `Crab ${i + 1}`,
 				loader: config.loader,
-				resource: 'entities/critters/critter-crab.json',
+				resource: '/entities/critters/critter-crab.json',
 				pathName: randomFromArray(['critter-lr-sm', 'critter-lr-md']),
 				animatedSpriteSettings: {
 					animationSpeed: randomFromArray([0.1, 0.11, 0.12]),
@@ -87,7 +87,7 @@ export const jellyfishList: any = (config: any) => {
 			new GameObject({
 				name: `Jellyfish ${i + 1}`,
 				loader: config.loader,
-				resource: 'entities/critters/critter-jellyfish.json',
+				resource: '/entities/critters/critter-jellyfish.json',
 				pathName: randomFromArray(['critter-up-down', 'critter-circle-cw', 'critter-circle-ccw', 'critter-lr-sm']),
 				animatedSpriteSettings: {
 					animationSpeed: randomFromArray([0.1, 0.11, 0.12]),
@@ -120,7 +120,7 @@ export const frogsList: any = (config: any) => {
 			new GameObject({
 				name: `Frog ${i + 1}`,
 				loader: config.loader,
-				resource: 'entities/critters/critter-frog.json',
+				resource: '/entities/critters/critter-frog.json',
 				pathName: randomFromArray(['critter-lr-sm', 'critter-lr-md', 'critter-lr-lg']),
 				animatedSpriteSettings: {
 					animationSpeed: randomFromArray([0.1, 0.11, 0.12])
@@ -145,8 +145,8 @@ export const catsList: any = (config: any) => {
 		new Cat({
 			name: 'Layla',
 			loader: config.loader,
-			resource: 'entities/critters/critter-layla.json',
-			portrait: 'entities/critters/critter-layla-portrait.png',
+			resource: '/entities/critters/critter-layla.json',
+			portrait: '/entities/critters/critter-layla-portrait.png',
 			dialog: `Miaou ! Je suis Layla le chat. Wissem et Melissa sont mes humains. Essayez le <strong class="text-primary-500">Bouton ♫</strong> pour écouter des musiques relaxantes pendant que vous explorez ce monde.`,
 			containerSettings: { x: 58, y: 62 },
 			containerLevel: config.containerLevel,
@@ -172,7 +172,7 @@ export const fishList: any = (config: any) => {
 			new Fish({
 				name: `Fish ${i + 1}`,
 				loader: config.loader,
-				resource: 'entities/critters/critter-fish.json',
+				resource: '/entities/critters/critter-fish.json',
 				containerSettings: critter
 			})
 		);
@@ -198,7 +198,7 @@ export const birdsList: any = (config: any) => {
 			new Bird({
 				name: `Bird ${i + 1}`,
 				loader: config.loader,
-				resource: 'entities/critters/critter-bird.json',
+				resource: '/entities/critters/critter-bird.json',
 				containerSettings: critter.containerSettings,
 				radius: critter.radius,
 				speed: critter.speed

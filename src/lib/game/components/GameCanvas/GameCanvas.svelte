@@ -81,18 +81,18 @@
 
 		// Load Game Resources
 		[
-			'grid.png',
-			'overworld.png',
-			'entities/pillar.json',
-			'entities/monument.json',
-			'entities/npcs/npc-chris.json',
-			'entities/npcs/npc-melissa.json',
-			'entities/critters/critter-bird.json',
-			'entities/critters/critter-layla.json',
-			'entities/critters/critter-crab.json',
-			'entities/critters/critter-jellyfish.json',
-			'entities/critters/critter-frog.json',
-			'entities/critters/critter-fish.json'
+			'/grid.png',
+			'/overworld.png',
+			'/entities/pillar.json',
+			'/entities/monument.json',
+			'/entities/npcs/npc-chris.json',
+			'/entities/npcs/npc-melissa.json',
+			'/entities/critters/critter-bird.json',
+			'/entities/critters/critter-layla.json',
+			'/entities/critters/critter-crab.json',
+			'/entities/critters/critter-jellyfish.json',
+			'/entities/critters/critter-frog.json',
+			'/entities/critters/critter-fish.json'
 		].forEach((r) => {
 			game.loader.add(r);
 		});
@@ -119,14 +119,14 @@
 			containerLevel = new PIXI.Container();
 
 			// World
-			world = new World({ texture: resources['overworld.png'].texture });
+			world = new World({ texture: resources['/overworld.png'].texture });
 			containerLevel.addChild(world.sprite);
 
 			// Camera
 			camera = new Camera({ app: game, container: containerLevel });
 
 			// Grid
-			grid = new Grid({ container: containerLevel, enabled: false, coords: false, texture: resources['grid.png'].texture });
+			grid = new Grid({ container: containerLevel, enabled: false, coords: false, texture: resources['/grid.png'].texture });
 
 			// Instantiate GameObjects ---
 			pillars = pillarsList({ loader: game.loader, modalStore });

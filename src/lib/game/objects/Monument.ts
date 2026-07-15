@@ -9,8 +9,7 @@ export class Monument extends GameObject {
 
 	constructor(config: any, modalStore: any) {
 		// Overwrite GameObject properties
-		config.resource = 'About Chris';
-		config.resource = 'entities/monument.json';
+		config.resource = '/entities/monument.json';
 		config.animatedSpriteSettings = {
 			animationSpeed: 0.05,
 			width: 3,
