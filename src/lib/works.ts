@@ -221,7 +221,7 @@ export const works: any = {
 				],
 				technology: 'Next.js, TypeScript, WebGL, Tailwind CSS',
 				url: 'https://yousra-el-hadi.vercel.app',
-				coords: { x: 109, y: 41 },
+				coords: { x: 48, y: 62 },
 				accent: '#4338ca',
 				thumbnail: placeholderThumb('Yousra El Hadi', '#4338ca'),
 				videos: [],
